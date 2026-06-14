@@ -1,0 +1,872 @@
+
+========================================
+EJECUCION 1
+========================================
+
+Ejecucion A* en entorno dinamico
+Heuristica usada: Manhattan
+Inicio: (4, 0)
+Fin: (5, 9)
+Limite obstaculos dinamicos: 27 de 110 casillas (25%)
+
+Iteracion 0
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 0 1 
+1 * * * * * * * * 4 
+1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 47
+Nodos generados en esta iteracion: 36
+Nodos inspeccionados en esta iteracion: 25
+Obstaculos dinamicos actuales: 0 / 27
+Proporcion obstaculos dinamicos: 0
+
+Iteracion 1
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 0 0 0 0 1 
+1 0 0 1 1 0 1 1 0 1 
+1 1 0 1 0 1 1 0 1 1 
+3 0 1 1 1 1 1 0 0 1 
+1 * * * 1 * * * * 4 
+1 1 0 0 * 1 1 0 1 1 
+1 1 0 1 1 1 1 1 1 1 
+1 0 0 1 0 1 0 1 1 1 
+1 0 1 1 1 1 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 44
+Nodos generados en esta iteracion: 21
+Nodos inspeccionados en esta iteracion: 15
+Obstaculos dinamicos actuales: 23 / 27
+Proporcion obstaculos dinamicos: 0.209091
+
+Iteracion 2
+No existe camino disponible. Reintento 1/5
+
+Iteracion 2
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 1 0 0 0 1 
+1 0 0 1 0 0 0 1 1 1 
+1 0 0 1 1 1 1 1 1 1 
+3 0 1 1 1 1 1 1 0 1 
+1 1 * * 1 1 0 1 * 4 
+1 1 1 0 * * * * 0 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 0 0 1 1 1 
+1 0 0 1 1 0 1 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 39
+Nodos generados en esta iteracion: 16
+Nodos inspeccionados en esta iteracion: 12
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 3
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 0 1 0 1 0 0 1 1 
+1 1 0 1 0 1 1 0 1 1 
+1 1 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 1 1 
+1 1 0 * * * 1 1 1 4 
+1 0 1 0 0 0 * 1 * 1 
+1 1 1 1 1 1 1 * 1 1 
+1 0 1 1 0 1 0 1 0 1 
+1 0 1 1 1 1 0 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 38
+Nodos generados en esta iteracion: 16
+Nodos inspeccionados en esta iteracion: 12
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 4
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 1 1 0 0 1 
+1 0 0 1 1 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+3 1 0 1 1 1 1 0 0 1 
+1 0 0 0 * 1 1 1 0 4 
+1 1 1 1 1 * * 1 * 1 
+1 0 0 1 1 1 1 * 0 1 
+1 0 1 1 1 1 1 0 0 1 
+1 0 1 1 0 1 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 33
+Nodos generados en esta iteracion: 13
+Nodos inspeccionados en esta iteracion: 9
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 5
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 0 1 1 0 1 
+1 0 0 1 0 1 0 0 0 1 
+1 0 1 1 0 1 1 0 1 1 
+3 1 1 1 1 1 1 1 1 1 
+1 0 1 0 1 0 1 * * 4 
+1 0 0 1 1 * * 0 1 1 
+1 1 0 1 1 1 1 0 0 1 
+1 0 0 1 1 1 1 1 1 1 
+1 0 0 1 1 0 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 22
+Nodos generados en esta iteracion: 8
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 6
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 1 0 0 1 1 
+1 0 1 1 0 1 1 1 1 1 
+1 0 1 1 1 0 1 0 0 1 
+3 0 1 1 1 1 1 * 1 1 
+1 0 1 1 1 0 * 1 * 4 
+1 0 0 0 1 1 * 1 0 1 
+1 0 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 1 0 1 
+1 0 1 1 1 0 1 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 24
+Nodos generados en esta iteracion: 8
+Nodos inspeccionados en esta iteracion: 6
+Obstaculos dinamicos actuales: 26 / 27
+Proporcion obstaculos dinamicos: 0.236364
+
+Iteracion 7
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 0 0 1 1 1 
+1 1 0 1 0 0 1 1 1 1 
+1 1 1 1 0 0 1 1 1 1 
+3 1 0 1 1 1 1 0 1 1 
+1 1 1 0 1 0 * * 1 4 
+1 0 0 0 0 1 0 1 * 1 
+1 1 1 1 1 1 1 0 0 1 
+1 0 0 1 1 0 1 0 0 1 
+1 1 0 1 0 0 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 19
+Nodos generados en esta iteracion: 9
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 8
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 1 0 0 1 
+1 1 1 1 1 1 0 1 1 1 
+1 0 0 1 1 1 1 0 1 1 
+3 1 1 1 1 1 1 1 * 1 
+1 1 1 0 0 0 0 * 1 4 
+1 0 0 0 0 0 0 0 1 1 
+1 0 0 1 1 1 1 0 1 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 14
+Nodos generados en esta iteracion: 9
+Nodos inspeccionados en esta iteracion: 5
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 9
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 0 0 1 1 1 
+1 1 0 1 1 1 1 0 1 1 
+1 1 0 1 1 1 1 0 0 1 
+3 0 0 1 1 1 1 0 * 1 
+1 0 0 0 1 1 1 1 0 4 
+1 1 0 1 0 1 0 1 0 1 
+1 0 1 1 1 1 1 0 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 7
+Nodos generados en esta iteracion: 5
+Nodos inspeccionados en esta iteracion: 2
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+
+Tabla resumen
+Heuristica Filas Columnas S E Coste Pasos Nodos_generados Nodos_inspeccionados Reintentos Obstaculos_medios
+Manhattan 11 10 (4,0) (5,9) 58 10 141 100 1 0.216364
+
+Meta alcanzada.
+
+========================================
+EJECUCION 2
+========================================
+
+Ejecucion A* en entorno dinamico
+Heuristica usada: Manhattan
+Inicio: (4, 0)
+Fin: (5, 9)
+Limite obstaculos dinamicos: 27 de 110 casillas (25%)
+
+Iteracion 0
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 0 1 
+1 * * * * * * * * 4 
+1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 47
+Nodos generados en esta iteracion: 36
+Nodos inspeccionados en esta iteracion: 25
+Obstaculos dinamicos actuales: 0 / 27
+Proporcion obstaculos dinamicos: 0
+
+Iteracion 1
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 0 1 0 0 1 
+1 1 0 1 1 0 0 1 1 1 
+1 1 1 1 1 0 1 0 0 1 
+3 0 1 1 1 1 1 0 1 1 
+1 * * * * * * * * 4 
+1 0 1 1 0 0 1 1 0 1 
+1 0 0 1 1 1 1 1 0 1 
+1 0 0 1 0 1 0 1 0 1 
+1 1 0 1 1 1 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 40
+Nodos generados en esta iteracion: 20
+Nodos inspeccionados en esta iteracion: 16
+Obstaculos dinamicos actuales: 22 / 27
+Proporcion obstaculos dinamicos: 0.2
+
+Iteracion 2
+No existe camino disponible. Reintento 1/5
+
+Iteracion 2
+No existe camino disponible. Reintento 2/5
+
+Iteracion 2
+No existe camino disponible. Reintento 3/5
+
+Iteracion 2
+No existe camino disponible. Reintento 4/5
+
+Iteracion 2
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 1 0 1 
+1 0 0 1 1 0 0 0 1 1 
+1 1 1 1 0 1 1 0 0 1 
+3 1 1 1 1 1 1 1 0 1 
+1 1 * * * * 1 * * 4 
+1 1 1 0 1 1 * 1 1 1 
+1 0 0 1 1 1 1 0 0 1 
+1 1 1 1 0 0 1 0 1 1 
+1 0 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 39
+Nodos generados en esta iteracion: 11
+Nodos inspeccionados en esta iteracion: 9
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 3
+No existe camino disponible. Reintento 1/5
+
+Iteracion 3
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 0 1 0 1 1 
+1 0 1 1 0 0 0 0 1 1 
+1 0 0 1 0 0 1 1 0 1 
+3 0 0 1 1 1 1 1 0 1 
+1 1 0 * 1 1 0 1 * 4 
+1 0 1 1 * * * * 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 1 0 1 1 0 0 1 0 1 
+1 1 0 1 0 1 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 34
+Nodos generados en esta iteracion: 18
+Nodos inspeccionados en esta iteracion: 11
+Obstaculos dinamicos actuales: 23 / 27
+Proporcion obstaculos dinamicos: 0.209091
+
+Iteracion 4
+No existe camino disponible. Reintento 1/5
+
+Iteracion 4
+No existe camino disponible. Reintento 2/5
+
+Iteracion 4
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 0 1 1 1 0 0 1 1 
+1 1 1 1 0 0 0 0 1 1 
+1 1 0 1 1 1 1 1 0 1 
+3 0 1 1 1 1 1 0 0 1 
+1 0 1 1 1 * 1 * * 4 
+1 1 1 0 * 1 * 0 1 1 
+1 1 1 1 1 1 1 1 0 1 
+1 1 0 1 0 1 0 0 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 31
+Nodos generados en esta iteracion: 10
+Nodos inspeccionados en esta iteracion: 8
+Obstaculos dinamicos actuales: 26 / 27
+Proporcion obstaculos dinamicos: 0.236364
+
+Iteracion 5
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 1 1 0 1 
+1 0 0 1 0 0 1 0 1 1 
+1 1 0 1 1 1 1 0 1 1 
+3 1 1 1 1 1 1 0 1 1 
+1 0 1 0 0 * * * 1 4 
+1 1 1 0 1 1 1 1 * 1 
+1 1 1 1 1 1 1 0 1 1 
+1 0 1 1 0 0 0 1 1 1 
+1 0 1 1 0 0 1 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 24
+Nodos generados en esta iteracion: 10
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 6
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 0 0 0 1 1 
+1 0 1 1 1 1 0 1 1 1 
+1 0 0 1 1 0 1 0 1 1 
+3 0 0 1 1 1 1 1 1 1 
+1 0 0 1 0 1 * * * 4 
+1 1 0 0 0 1 0 1 0 1 
+1 1 0 1 1 1 1 1 1 1 
+1 1 0 1 1 0 1 1 0 1 
+1 1 0 1 1 0 0 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 15
+Nodos generados en esta iteracion: 5
+Nodos inspeccionados en esta iteracion: 4
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 7
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 0 1 0 1 0 0 0 1 
+1 1 1 1 0 1 0 1 0 1 
+1 0 0 1 0 1 1 1 0 1 
+3 0 1 1 1 1 1 1 0 1 
+1 0 0 1 1 1 0 * * 4 
+1 0 0 1 1 0 0 0 1 1 
+1 1 0 1 1 1 1 0 1 1 
+1 1 0 1 1 1 1 1 1 1 
+1 0 0 1 0 1 1 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 10
+Nodos generados en esta iteracion: 6
+Nodos inspeccionados en esta iteracion: 3
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 8
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 0 0 1 1 1 
+1 1 1 1 0 0 1 1 1 1 
+1 0 1 1 1 0 1 1 0 1 
+3 0 0 1 1 1 1 1 1 1 
+1 0 0 0 0 0 1 0 * 4 
+1 1 1 0 0 1 1 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 1 0 1 0 1 0 1 0 1 
+1 1 1 1 1 0 0 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 5
+Nodos generados en esta iteracion: 4
+Nodos inspeccionados en esta iteracion: 2
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+
+Tabla resumen
+Heuristica Filas Columnas S E Coste Pasos Nodos_generados Nodos_inspeccionados Reintentos Obstaculos_medios
+Manhattan 11 10 (4,0) (5,9) 51 9 120 85 7 0.208081
+
+Meta alcanzada.
+
+========================================
+EJECUCION 3
+========================================
+
+Ejecucion A* en entorno dinamico
+Heuristica usada: Manhattan
+Inicio: (4, 0)
+Fin: (5, 9)
+Limite obstaculos dinamicos: 27 de 110 casillas (25%)
+
+Iteracion 0
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 0 1 
+1 * * * * * * * * 4 
+1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 47
+Nodos generados en esta iteracion: 36
+Nodos inspeccionados en esta iteracion: 25
+Obstaculos dinamicos actuales: 0 / 27
+Proporcion obstaculos dinamicos: 0
+
+Iteracion 1
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 1 0 0 1 
+1 1 0 1 0 1 0 0 1 1 
+1 1 1 1 1 0 1 1 1 1 
+3 1 1 1 1 1 1 1 0 1 
+1 * 1 * * 1 1 1 0 4 
+1 1 * 0 1 * * 1 * 1 
+1 0 0 1 1 1 1 * 0 1 
+1 0 0 1 1 1 1 1 0 1 
+1 1 0 1 0 0 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 52
+Nodos generados en esta iteracion: 18
+Nodos inspeccionados en esta iteracion: 15
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 2
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 0 1 
+1 0 1 1 1 1 1 1 0 1 
+1 0 1 1 1 0 1 0 1 1 
+3 1 0 1 1 1 1 0 0 1 
+1 1 0 0 0 0 1 * * 4 
+1 0 * * * * * 0 1 1 
+1 0 1 1 1 1 1 1 0 1 
+1 0 0 1 1 0 0 1 1 1 
+1 0 0 1 0 1 0 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 37
+Nodos generados en esta iteracion: 25
+Nodos inspeccionados en esta iteracion: 19
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 3
+No existe camino disponible. Reintento 1/5
+
+Iteracion 3
+No existe camino disponible. Reintento 2/5
+
+Iteracion 3
+No existe camino disponible. Reintento 3/5
+
+Iteracion 3
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 1 0 0 1 0 1 
+1 0 1 1 0 1 0 1 0 1 
+1 0 1 1 0 1 1 1 0 1 
+3 1 0 1 1 1 1 1 0 1 
+1 1 0 1 1 1 * * * 4 
+1 0 1 * * * 0 1 0 1 
+1 0 1 1 1 1 1 1 0 1 
+1 1 1 1 1 0 1 1 0 1 
+1 0 1 1 0 1 0 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 32
+Nodos generados en esta iteracion: 12
+Nodos inspeccionados en esta iteracion: 9
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 4
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 0 1 1 0 0 0 0 1 
+1 1 1 1 0 0 0 0 1 1 
+1 1 0 1 0 1 1 0 1 1 
+3 1 1 1 1 1 1 * * 1 
+1 0 0 1 1 * * 1 1 4 
+1 1 1 0 * 1 1 1 1 1 
+1 0 0 1 1 1 1 1 0 1 
+1 1 0 1 0 0 0 0 0 1 
+1 1 1 1 0 1 0 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 31
+Nodos generados en esta iteracion: 9
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 5
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 1 0 1 0 1 
+1 0 1 1 1 0 1 1 0 1 
+1 0 0 1 0 1 1 1 0 1 
+3 0 0 1 1 1 1 * 1 1 
+1 0 0 1 0 * * 1 * 4 
+1 1 1 0 1 1 0 0 0 1 
+1 0 1 1 1 1 1 0 0 1 
+1 1 1 1 1 1 1 1 0 1 
+1 1 0 1 0 1 1 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 24
+Nodos generados en esta iteracion: 12
+Nodos inspeccionados en esta iteracion: 9
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 6
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 1 1 0 1 1 
+1 1 1 1 0 0 0 0 1 1 
+1 0 0 1 0 0 1 1 1 1 
+3 0 0 1 1 1 1 1 * 1 
+1 0 0 1 0 0 * * 1 4 
+1 0 1 1 0 0 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+1 1 0 1 0 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 19
+Nodos generados en esta iteracion: 8
+Nodos inspeccionados en esta iteracion: 6
+Obstaculos dinamicos actuales: 25 / 27
+Proporcion obstaculos dinamicos: 0.227273
+
+Iteracion 7
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 1 0 1 1 1 
+1 1 0 1 0 1 1 0 0 1 
+1 1 1 1 0 1 1 1 1 1 
+3 0 0 1 1 1 1 0 1 1 
+1 0 0 0 0 0 1 * 1 4 
+1 1 0 1 0 1 1 1 * 1 
+1 1 1 1 1 1 1 0 0 1 
+1 0 0 1 0 1 0 0 1 1 
+1 1 1 1 0 0 0 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 14
+Nodos generados en esta iteracion: 5
+Nodos inspeccionados en esta iteracion: 4
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 8
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 0 0 1 1 1 
+1 0 0 1 1 0 0 0 0 1 
+1 0 0 1 1 1 1 1 1 1 
+3 0 0 1 1 1 1 1 0 1 
+1 0 0 0 0 0 1 0 1 4 
+1 0 1 0 0 1 1 0 * 1 
+1 0 0 1 1 1 1 0 1 1 
+1 0 0 1 0 0 1 1 0 1 
+1 1 0 1 1 1 0 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 7
+Nodos generados en esta iteracion: 4
+Nodos inspeccionados en esta iteracion: 2
+Obstaculos dinamicos actuales: 21 / 27
+Proporcion obstaculos dinamicos: 0.190909
+
+
+Tabla resumen
+Heuristica Filas Columnas S E Coste Pasos Nodos_generados Nodos_inspeccionados Reintentos Obstaculos_medios
+Manhattan 11 10 (4,0) (5,9) 55 9 129 96 3 0.210101
+
+Meta alcanzada.
+
+========================================
+EJECUCION 4
+========================================
+
+Ejecucion A* en entorno dinamico
+Heuristica usada: Manhattan
+Inicio: (4, 0)
+Fin: (5, 9)
+Limite obstaculos dinamicos: 27 de 110 casillas (25%)
+
+Iteracion 0
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 0 1 
+1 * * * * * * * * 4 
+1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 47
+Nodos generados en esta iteracion: 36
+Nodos inspeccionados en esta iteracion: 25
+Obstaculos dinamicos actuales: 0 / 27
+Proporcion obstaculos dinamicos: 0
+
+Iteracion 1
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 0 0 0 0 1 
+1 0 1 1 0 1 0 0 1 1 
+1 0 1 1 0 1 1 1 0 1 
+3 1 1 1 1 1 1 * 0 1 
+1 * * * * * * 1 * 4 
+1 1 1 1 0 0 1 1 0 1 
+1 1 1 1 1 1 1 0 1 1 
+1 1 1 1 1 0 0 0 1 1 
+1 0 1 1 1 1 0 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 44
+Nodos generados en esta iteracion: 16
+Nodos inspeccionados en esta iteracion: 14
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 2
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 1 0 0 0 0 1 
+1 0 0 1 0 1 1 1 1 1 
+1 1 1 1 1 1 1 0 0 1 
+3 1 1 1 1 1 1 0 1 1 
+1 0 * * * * * * 1 4 
+1 0 1 1 0 0 1 1 * 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 1 1 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 39
+Nodos generados en esta iteracion: 19
+Nodos inspeccionados en esta iteracion: 13
+Obstaculos dinamicos actuales: 23 / 27
+Proporcion obstaculos dinamicos: 0.209091
+
+Iteracion 3
+No existe camino disponible. Reintento 1/5
+
+Iteracion 3
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 0 0 1 0 1 
+1 1 1 1 0 1 0 0 0 1 
+1 0 1 1 0 1 1 0 1 1 
+3 0 1 1 1 1 1 0 * 1 
+1 1 1 * * 1 * * 1 4 
+1 1 1 1 0 * 1 0 1 1 
+1 1 0 1 1 1 1 0 0 1 
+1 1 1 1 0 0 1 1 0 1 
+1 1 0 1 1 0 1 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 38
+Nodos generados en esta iteracion: 12
+Nodos inspeccionados en esta iteracion: 10
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 4
+No existe camino disponible. Reintento 1/5
+
+Iteracion 4
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 0 1 1 1 1 1 
+1 0 0 1 0 0 1 1 0 1 
+1 0 1 1 1 1 1 1 0 1 
+3 0 1 1 1 1 1 0 0 1 
+1 0 1 0 * * * * * 4 
+1 1 1 1 0 1 0 0 1 1 
+1 0 0 1 1 1 1 1 0 1 
+1 1 1 1 0 0 0 0 0 1 
+1 1 0 1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 25
+Nodos generados en esta iteracion: 11
+Nodos inspeccionados en esta iteracion: 9
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 5
+No existe camino disponible. Reintento 1/5
+
+Iteracion 5
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 1 1 1 0 1 1 
+1 1 1 1 1 1 0 1 0 1 
+1 1 1 1 1 0 1 0 1 1 
+3 0 0 1 1 1 1 1 * 1 
+1 0 1 0 1 * * * 1 4 
+1 0 1 0 0 1 1 0 0 1 
+1 0 0 1 1 1 1 0 1 1 
+1 1 1 1 0 1 0 0 0 1 
+1 1 0 1 1 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 24
+Nodos generados en esta iteracion: 9
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 6
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 1 1 1 1 0 0 0 1 
+1 1 0 1 0 0 1 1 0 1 
+1 1 1 1 1 1 1 1 0 1 
+3 1 0 1 1 1 1 * 0 1 
+1 0 1 0 0 0 * 1 * 4 
+1 0 0 0 1 0 0 1 1 1 
+1 1 0 1 1 1 1 0 0 1 
+1 0 1 1 0 1 1 1 0 1 
+1 1 1 1 1 1 0 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 19
+Nodos generados en esta iteracion: 10
+Nodos inspeccionados en esta iteracion: 7
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 7
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 1 1 1 0 1 0 1 1 1 
+1 0 1 1 1 1 0 0 0 1 
+1 0 1 1 1 0 1 0 0 1 
+3 0 0 1 1 1 1 * 0 1 
+1 0 1 1 1 1 0 0 * 4 
+1 0 1 1 0 0 1 0 0 1 
+1 0 1 1 1 1 1 1 0 1 
+1 0 1 1 1 0 1 1 0 1 
+1 0 0 1 1 0 1 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 12
+Nodos generados en esta iteracion: 10
+Nodos inspeccionados en esta iteracion: 5
+Obstaculos dinamicos actuales: 27 / 27
+Proporcion obstaculos dinamicos: 0.245455
+
+Iteracion 8
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 1 1 1 1 
+1 0 0 1 1 0 1 1 0 1 
+1 1 0 1 0 0 1 1 0 1 
+3 0 0 1 1 1 1 1 0 1 
+1 0 0 1 0 1 0 0 * 4 
+1 1 1 0 1 0 0 1 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 1 1 1 0 1 
+1 0 0 1 0 1 0 1 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 5
+Nodos generados en esta iteracion: 3
+Nodos inspeccionados en esta iteracion: 2
+Obstaculos dinamicos actuales: 25 / 27
+Proporcion obstaculos dinamicos: 0.227273
+
+
+Tabla resumen
+Heuristica Filas Columnas S E Coste Pasos Nodos_generados Nodos_inspeccionados Reintentos Obstaculos_medios
+Manhattan 11 10 (4,0) (5,9) 51 9 126 92 3 0.212121
+
+Meta alcanzada.
+
+========================================
+EJECUCION 5
+========================================
+
+Ejecucion A* en entorno dinamico
+Heuristica usada: Manhattan
+Inicio: (4, 0)
+Fin: (5, 9)
+Limite obstaculos dinamicos: 27 de 110 casillas (25%)
+
+Iteracion 0
+Camino generado:
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 
+3 0 0 1 1 1 1 0 0 1 
+1 * * * * * * * * 4 
+1 0 0 0 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 
+1 1 1 1 1 1 1 1 1 1 
+Coste del camino planificado: 47
+Nodos generados en esta iteracion: 36
+Nodos inspeccionados en esta iteracion: 25
+Obstaculos dinamicos actuales: 0 / 27
+Proporcion obstaculos dinamicos: 0
+
+Iteracion 1
+No existe camino disponible. Reintento 1/5
+
+Iteracion 1
+No existe camino disponible. Reintento 2/5
+
+Iteracion 1
+No existe camino disponible. Reintento 3/5
+
+Iteracion 1
+No existe camino disponible. Reintento 4/5
+
+Iteracion 1
+No existe camino disponible. Reintento 5/5
+
+Destino inalcanzable tras 5 reintentos consecutivos.
+
+========================================
+RESUMEN GLOBAL
+========================================
+Ejecuciones totales: 5
+Ejecuciones alcanzadas: 4
+Ejecuciones fallidas: 1
+Coste medio: 44.4
+Pasos medios: 7.6
+Nodos generados medios: 110.4
+Nodos inspeccionados medios: 79.6
+Reintentos medios: 3.8
+Obstaculos medios: 0.169333
