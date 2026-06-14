@@ -1,25 +1,28 @@
 #ifndef ASTAR_H
 #define ASTAR_H
 
-#include <queue>
-#include <map>
-#include <cmath>
+#include <vector>
 
 #include "laberinto.h"
 #include "nodo.h"
 
 class AStar {
  public:
-  AStar(Laberinto& lab) : laberinto_(lab) {}
+  explicit AStar(Laberinto& lab);
+
   bool BuscarCamino(const Celda& inicio, const Celda& fin, std::vector<Nodo>& camino);
 
+  int GetGenerados() const { return nodos_generados_; }
+  int GetInspeccionados() const { return nodos_inspeccionados_; }
+
  private:
-  double Heuristica(const Nodo& a, const Nodo& b) const;
-  double CosteMovimiento(const Nodo& a, const Nodo& b) const;
-  std::vector<Nodo> Vecinos(const Nodo& n) const;
+  double Heuristica(int x1, int y1, int x2, int y2) const;
+  double CosteMovimiento(int x1, int y1, int x2, int y2) const;
 
   Laberinto& laberinto_;
-};
 
+  int nodos_generados_ = 0;
+  int nodos_inspeccionados_ = 0;
+};
 
 #endif

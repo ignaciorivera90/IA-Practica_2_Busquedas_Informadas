@@ -1,41 +1,34 @@
 #include "funciones.h"
 
-int main(int argc, char *argv[]) {
-  if (argc == 2 && std::string(argv[1]) == "--help") {
+#include "laberinto.h"
+#include "agente.h"
+
+int main(int argc, char* argv[]) {
+
+  if (argc == 2 &&
+      std::string(argv[1]) == "--help") {
     help();
-    exit(0);
+    return 0;
   }
 
   if (argc != 3) {
     help();
-    exit(1);
+    return 1;
   }
 
-  int option;
-  std::string in_file = std::string(argv[1]);
-  const std::string out_file = std::string(argv[2]);
+  std::string in_file = argv[1];
 
-  while (true) {
-    clrscr();
-    menu(option);
-    switch (option) {
-      case 1 :
-        clrscr();
-        std::cout << "Introducir la ruta completa del archivo (ejemplo: ../doc/M1.txt)" << std::endl;
-        std::cin >> in_file;
+  try {
+    Laberinto lab(in_file);
+    Celda inicio = lab.BuscarInicio();
+    Celda fin = lab.BuscarFin();
+    Agente agente(lab, inicio, fin);
+    agente.Ejecutar();
 
-        pressanykey();
-        clrscr();
-        break;
-      case 2:
-        clrscr();
-
-        break;
-      case 3:
-        clrscr();
-        return 0;
-        break;
-    }
+  } catch (const std::exception& e) {
+    std::cerr << "Error: " << e.what() << std::endl;
+    return 1;
   }
+
   return 0;
 }
